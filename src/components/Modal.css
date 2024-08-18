@@ -1,0 +1,56 @@
+form {
+     display: flex;
+     width: 100%;
+     padding: var(--space-7-half, 1.875rem);
+     flex-direction: column;
+     align-items: flex-start;
+     gap: var(--space-6, 1.5rem);
+     border-radius: var(--space-5, 1.25rem) var(--space-5, 1.25rem) 0rem 0rem;
+     opacity: var(--sds-size-stroke-border);
+     background: var(--Dialog-background, #fff);
+     box-shadow: 0px -2px 6px 0px rgba(0, 4, 14, 0.1);
+}
+
+h1 {
+     overflow: hidden;
+     color: var(--Dialog-title, #0760fb);
+     text-overflow: ellipsis;
+     font-family: Pretendard;
+     font-size: 1.125rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+input {
+     display: flex;
+     padding: 0.25rem;
+     border: none;
+     border-bottom: 0.0625rem solid #979797;
+     align-items: center;
+     gap: var(--space-2-half, 0.625rem);
+     align-self: stretch;
+     color: var(--Input-normal, #979797);
+     font-size: 0.875rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 150%; /* 1.3125rem */
+}
+
+.btn-column {
+     display: flex;
+     gap: 0.5rem;
+     width: 100%;
+     flex-direction: row;
+
+     > button:last-child {
+          color: var(--Button-secondary-label, #0760fb);
+          border-radius: var(--space-3, 0.75rem);
+          background: var(--Button-secondary-background, #e2ebfa);
+     }
+}
+
+button {
+     padding: var(--space-4-half, 1.125rem) var(--space-5, 1.25rem);
+     border: none;
+}
